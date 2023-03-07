@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brigthBlue: hsl(245, 75%, 52%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 380px) {
+  body {
+    background: url('images/pattern-background-mobile.svg') no-repeat !important;
+  }
+  .changePlan p {
+    margin: 0 10% 0 5% !important;
+  }
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background: var(--paleBlue) url('images/pattern-background-desktop.svg')
+    repeat-x;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff;
+  max-width: 450px;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 1rem;
+  overflow: hidden;
+  color: var(--desaturatedBlue);
+  box-shadow: 0 1rem 3.125rem rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+}
+
+.card a {
+  display: block;
+}
+
+.card a.btnProceed {
+  background-color: var(--brigthBlue);
+  color: var(--veryPaleBlue);
+  margin: 1.25rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 1rem 0.625rem var(--paleBlue);
+}
+
+.card a.cancelOrder {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--desaturatedBlue);
+}
+
+.info {
+  margin: 2.813rem;
+}
+
+.info p {
+  margin: 1.563rem 0;
+}
+
+.info h1,
+.changePlan strong {
+  color: var(--darkBlue);
+}
+
+.card,
+.changePlan a {
+  display: inline-block;
+}
+
+.changePlan {
+  background-color: var(--veryPaleBlue);
+  border-radius: 1rem;
+  min-height: 6.25rem;
+}
+
+.changePlan img {
+  width: 2.813rem;
+}
+
+.changePlan p {
+  margin: 0 30% 0 10%;
+}
